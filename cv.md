@@ -11,6 +11,15 @@
 ## About me and my life
 I am glad to see you on my first CV page! I was born in Yaroslavl, Russia. Now I am getting a higher education in St. Petersburg. I graduated with honors from art school and still adore art as much as I love working with code. Bernard Shaw's quote has always inspired me to overcome new difficulties
 >Work hard to get what you like, otherwise you'll be forced to just like what you get.
+## My Skills  
+* **basic**
+  - JavaScript
+  - Git 
+  - Figma
+* **average**
+  - HTML
+  - CSS
+  - Adobe Illustrator
 ## Education
 * University: [ETU]('https://etu.ru/'), third year at the Faculty of Computer Technology and Computer Science
 * [Online manual on JS]('https://learn.javascript.ru/')
