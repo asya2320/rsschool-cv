@@ -45,6 +45,7 @@ function highAndLow(numbers){
 * RS-school course ["JavaScript/Front-end"]('https://rs.school/js/') *(in process)*
 
 ## Languages
+
 Language|Level
 :------:|:-----------:
 english |intermediate
