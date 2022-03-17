@@ -45,12 +45,9 @@ function highAndLow(numbers){
 * RS-school course ["JavaScript/Front-end"]('https://rs.school/js/') *(in process)*
 
 ## Languages
-
-Language|Level
-:------:|:-----------:
-english |intermediate
-german  |beginner
-russian |native
+* English: intermediate 
+* German: basic
+* Russian: native
 
 The level of English is confirmed by the test [EF SET]('https://www.efset.org/ru/')
    
