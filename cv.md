@@ -20,6 +20,20 @@ I am glad to see you on my first CV page! I was born in Yaroslavl, Russia. Now I
   - HTML
   - CSS
   - Adobe Illustrator
+## Code Example
+This is the first code I wrote on the codevars website. My function returns the largest and smallest numbers from the string.
+```
+function highAndLow(numbers){
+    let arr = numbers.split(' ');
+    let arrV = new Array;
+    for(let i=0; i<arr.length; i++){
+      arrV[i]=+arr[i];
+    }
+    min=Math.min.apply(null, arrV);
+    max=Math.max.apply(null, arrV);
+    return (max+' '+min);
+  }
+```
 ## Education
 * University: [ETU]('https://etu.ru/'), third year at the Faculty of Computer Technology and Computer Science
 * [Online manual on JS]('https://learn.javascript.ru/')
