@@ -35,21 +35,42 @@
     <title>Travel</title>
   </head>
   <body>
-    <!-- <div class="bg_opacity"></div> -->
     <div class="wrapper">
       <header>
         <div class="logo">
-          <img src="logo.svg" alt="logo" />
-          <h2 style="font-size: 32px; margin: 0 auto">Travel Portal</h2>
+          <div><img src="logo.svg" alt="logo" /></div>
+          <div><h2 class="logo_h2">Travel Portal</h2></div>
         </div>
-        <nav>
-          <ul>
-            <li><a href="#preview">How It Works</a></li>
-            <li><a href="#steps">Plan Your Trip</a></li>
-            <li><a href="#destinations">Destinations</a></li>
-            <li><a href="#travel">Travel Stories</a></li>
-          </ul>
-        </nav>
+        <div class="burger_container">
+          <img src="mobile_burger_icon.svg" id="burger_menu" />
+          <div class="burger">
+            <nav id="nav">
+              <img src="mobile_close_burger.svg" id="close_burger" />
+              <ul id="ul_list">
+                <li id="li_list1"><a href="#preview">How It Works</a></li>
+                <li id="li_list2"><a href="#steps">Plan Your Trip</a></li>
+                <li id="li_list3"><a href="#destinations">Destinations</a></li>
+                <li id="li_list4"><a href="#travel">Travel Stories</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <script>
+          document.addEventListener("click", function (e) {
+            const NAV = document.getElementById("nav");
+            const UL = document.getElementById("ul_list");
+            const CLOSE_BTN = document.getElementById("close_burger");
+            if (e.target.id != "nav" && e.target.id != "burger_menu") {
+              NAV.classList.remove("open");
+              UL.classList.remove("open");
+              CLOSE_BTN.classList.remove("open");
+            } else if (e.target.id == "burger_menu") {
+              NAV.classList.toggle("open");
+              UL.classList.toggle("open");
+              CLOSE_BTN.classList.toggle("open");
+            }
+          });
+        </script>
         <button>Login</button>
       </header>
       <main>
@@ -75,15 +96,15 @@
           <div class="steps_3">
             <div class="step_1">
               <img src="step_1.svg" alt="first_step_icon" />
-              <p>Tell us what you want to do</p>
+              <p style="text-align: left">Tell us what you want to do</p>
             </div>
             <div class="step_2">
               <img src="step_2.svg" alt="second_step_icon" />
-              <p>Share us preferable dates</p>
+              <p style="text-align: center">Share us preferable dates</p>
             </div>
             <div class="step_3">
               <img src="step_3.svg" alt="third_step_icon" />
-              <p>We will give you recommendations</p>
+              <p style="text-align: right">We will give you recommendations</p>
             </div>
           </div>
         </section>
@@ -105,17 +126,38 @@
               </div>
             </div>
           </div>
-          <div class="swiper_slider">
-            <img src="disable_slider.svg" alt="slider_point" />
+          <div class="swiper_slider_desktop">
             <img src="active_slider.svg" alt="slider_point" />
             <img src="disable_slider.svg" alt="slider_point" />
+            <img src="disable_slider.svg" alt="slider_point" />
+          </div>
+          <div class="slider_1_mobile">
+            <div class="slider_2_mobile">
+              <div class="slider_mobile">
+                <img src="mobile_spain.jpg" alt="Spain" class="spain" />
+                <div class="wrapper_spain">
+                  <p>SPAIN</p>
+                  <div class="arrow_container">
+                    <img
+                      src="mobile_destinations_arrow_left.svg"
+                      class="arrow_l"
+                    />
+                    <img
+                      src="mobile_destinations_arrow_right.svg"
+                      class="arrow_r"
+                    />
+                  </div>
+                  <div class="swiper_slider">
+                    <img src="disable_slider.svg" alt="slider_point" />
+                    <img src="active_slider.svg" alt="slider_point" />
+                    <img src="disable_slider.svg" alt="slider_point" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <button>
-            <img
-              src="travel_arrow.svg"
-              style="margin-right: -25px"
-              alt="travel_arrow"
-            />
+            <img src="travel_arrow.svg" alt="travel_arrow" />
             Find More
           </button>
         </section>
@@ -195,13 +237,71 @@
               </article>
             </div>
           </div>
+          <div class="stories_container_mobile">
+            <div class="story">
+              <img src="mobile_story_1.jpg" />
+              <article>
+                <h3>10 Photos of Attractive Thailand</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla.Lorem ipsum dolor sit a...
+                  <strong><u>Read More</u></strong>
+                </p>
+              </article>
+            </div>
+            <div class="story">
+              <img src="mobile_story_2.jpg" />
+              <article>
+                <h3>Canyonlands National Park, Utah</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla.Lorem ipsum dolor sit a...
+                  <strong><u>Read More</u></strong>
+                </p>
+              </article>
+            </div>
+            <div class="story">
+              <img src="mobile_story_3.jpg" />
+              <article>
+                <h3>I left my heart in the Mountains!</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla.Lorem ipsum dolor sit a...
+                  <strong><u>Read More</u></strong>
+                </p>
+              </article>
+            </div>
+            <div class="story">
+              <img src="mobile_story_4.jpg" />
+              <article>
+                <h3>The Longest journey in my life!</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla.Lorem ipsum dolor sit a...
+                  <strong><u>Read More</u></strong>
+                </p>
+              </article>
+            </div>
+          </div>
           <button>
-            <img
-              src="travel_arrow.svg"
-              style="margin-right: -25px"
-              alt="travel_arrow"
-            />
-            See More
+            <img src="travel_arrow.svg" alt="travel_arrow" />
+            <p>See More</p>
           </button>
         </section>
       </main>
@@ -211,13 +311,10 @@
             ><img
               src="https://rs.school/images/rs_school_js.svg"
               alt="rs_school"
-              style="width: 60px; height: 22px"
+              class="rs_school"
           /></a>
           <a href="https://github.com/asya2320"
-            ><img
-              src="github.svg"
-              alt="github"
-              style="width: 40px; height: 40px"
+            ><img src="github.svg" alt="github" class="git"
           /></a>
         </div>
         <a class="text_footer">All Rights Reserved © Travel Portal</a>
