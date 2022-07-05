@@ -4,67 +4,40 @@ html {
 }
 
 body {
-  width: 1440px;
-  height: 3735px;
-  min-height: 3735px;
+  width: 100%;
+  height: 259.3vw;
   margin: 0 auto;
   overflow-x: hidden;
   overflow-y: auto;
   background: url(explore_background.jpg) no-repeat center top,
     url(travel_background.jpg) no-repeat center bottom;
-  background-size: 1440px;
+  /* background-size: 1440px; */
+  background-size: 100%;
 }
 
 .wrapper {
-  max-width: 1440px;
+  max-width: 100%;
   height: 100%;
   margin: 0 auto;
-  background: url(bg.svg) no-repeat center bottom 64px;
-  background-size: 1518px;
-  /* opacity: 0.7; */
-}
-
-.bg {
-  width: 100vw;
-  height: 100%;
-  padding: 0 auto;
-  margin: 0 auto;
-  /* background: url(explore_background.jpg) no-repeat center top,
-    url(travel_background.jpg) no-repeat center bottom;
-  background-size: contain; */
-}
-
-.bg_opacity {
-  /* position: absolute; */
-  /* position: relative;
-  width: 100vw;
-  height: 47%;
-  padding: 0;
-  margin-top: 2000px;
-  background: url(bg.jpg) no-repeat center bottom 64px;
-  background-size: cover;
-  opacity: 0.7; */
-  position: absolute;
-  /* position: relative; */
-  width: 93vw;
-  height: 102%;
-  padding: 0;
-  top: 84px;
-  background: url(bg.jpg) no-repeat center bottom 64px;
-  background-size: cover;
-  opacity: 0.7;
+  background: url(bg.svg) no-repeat center bottom 4.4vw;
+  background-size: contain;
 }
 
 header {
   position: absolute;
   top: 0px;
   background-color: rgba(242, 120, 92, 0.5);
-  width: 1440px;
-  height: 90px;
+  /* width: 1440px; */
+  width: 100%;
+  height: 6.3vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+}
+
+.bg_mobile {
+  display: none;
 }
 
 .logo {
@@ -72,27 +45,48 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 213px;
-  height: 31px;
-  margin-top: 25px;
-  margin-left: 120px;
+  width: 14.5%;
+  height: 37%;
+  margin-left: 8.3%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.logo img {
+  width: 2.3vw;
+  height: 2.3vw;
+}
+
+.burger img {
+  display: none;
+}
+
+.burger_container img {
+  display: none;
+}
+
+.logo_h2 {
+  vertical-align: top;
+  font-size: 2.24vw;
+  height: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
   color: white;
   line-height: 38.88px;
   font-family: "Magra", sans-serif;
 }
 
-.logo h2 {
-  font-size: 32px;
-  line-height: 39px;
-  margin: 0 auto;
-}
-
 header nav {
   position: relative;
-  width: 527px;
+  width: 36.5vw;
   height: 21px;
-  margin-top: 35px;
-  margin-right: 35px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 2.5vw;
+}
+
+.burger_container {
+  margin: auto 0px;
 }
 
 header nav ul {
@@ -107,7 +101,7 @@ header nav ul {
 
 header nav ul li {
   color: white;
-  font-size: 16px;
+  font-size: 1.1vw;
   line-height: 21.17px;
   font-family: "Red Hat Text", sans-serif;
 }
@@ -136,13 +130,14 @@ header nav ul li a:active {
 
 header button {
   position: relative;
-  width: 103px;
-  height: 41px;
-  margin-right: 120px;
-  margin-top: 25px;
+  width: 7.1%;
+  height: 44.5%;
+  margin-right: 8.4%;
+  margin-top: auto;
+  margin-bottom: auto;
   background: #0d606f;
   border: none;
-  box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+  box-shadow: 0px 4px 4px rgb(13 96 111 / 50%);
   border-radius: 10px;
   display: flex;
   flex-direction: row;
@@ -150,7 +145,7 @@ header button {
   align-items: center;
   color: white;
   font-family: "Red Hat Text", sans-serif;
-  font-size: 16px;
+  font-size: 1vw;
   line-height: 21px;
 }
 
@@ -164,9 +159,9 @@ header button:hover {
 
 main {
   position: relative;
-  top: 122px;
+  top: 2.3%;
   width: 100%;
-  height: 92%;
+  height: 96%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -176,36 +171,38 @@ main {
 
 .preview {
   position: relative;
-  width: 892px;
+  width: 62%;
   height: 422px;
-  margin-left: -307px;
+  margin-right: 21.3%;
+  margin-top: 2.7%;
 }
 
 h1 {
   font-family: "Aleo", serif;
-  font-size: 80px;
-  line-height: 96px;
+  font-size: 5.56vw;
+  line-height: 6.45vw;
   color: #ffffff;
   margin: 0;
   padding: 0;
 }
 
 .preview p {
-  margin-top: 30px;
+  margin-top: 2.4vw;
+  margin-bottom: 3.3vw;
   font-family: "Aleo", serif;
   font-style: italic;
-  font-size: 20px;
+  font-size: 1.4vw;
   line-height: 24px;
   color: #ffffff;
 }
 
 .search {
   position: relative;
-  margin-top: 28px;
+  padding-left: 0.8vw;
   outline: none;
   border: none;
-  width: 888px;
-  height: 93px;
+  width: 98.5%;
+  height: 6.4vw;
   background: rgba(255, 255, 255, 0.7);
   border-radius: 16px;
 }
@@ -214,55 +211,49 @@ input::-webkit-input-placeholder {
   font-family: "Aleo", serif;
   font-style: italic;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.65vw;
+  margin-top: auto;
+  margin-bottom: auto;
   line-height: 29px;
-  padding-left: 36px;
-  padding-bottom: 40px;
+  padding-left: 3%;
+  padding-bottom: auto;
+  padding-top: auto;
   color: #f2785c;
 }
 
-/* .preview .search p {
-  position: relative;
-  width: 560px;
-  margin: 0;
-  padding-right: 0;
-  padding-top: 32px;
-  padding-left: 41px;
-  
-} */
-
 .preview button {
   position: relative;
-  width: 228px;
-  height: 58px;
+  width: 25.4%;
+  height: 4vw;
   float: right;
-  margin-top: -76px;
-  margin-right: 18px;
+  margin-top: -8.6%;
+  margin-right: 2.2%;
   background: #0d606f;
   border-radius: 10px;
   display: flex;
   border: none;
-  box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+  box-shadow: 0px 4px 4px rgb(13 96 111 / 50%);
   flex-direction: row;
   justify-content: center;
   align-items: center;
   color: white;
   font-family: "Red Hat Text", sans-serif;
-  font-size: 24px;
+  font-size: 1.679vw;
   line-height: 32px;
 }
 
 .steps {
   position: relative;
-  width: 1177px;
-  height: 247px;
+  width: 81.7%;
+  height: 20vw;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 300px;
+  margin-top: 20vw;
 }
 
 .step_1 {
-  height: 175px;
+  height: 100%;
+  width: 21%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -271,8 +262,9 @@ input::-webkit-input-placeholder {
 }
 
 .step_2 {
-  height: 175px;
-  margin-left: 70px;
+  height: 100%;
+  margin-left: 5vw;
+  width: 30.7%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -281,7 +273,8 @@ input::-webkit-input-placeholder {
 }
 
 .step_3 {
-  height: 175px;
+  height: 100%;
+  width: 27%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -290,20 +283,20 @@ input::-webkit-input-placeholder {
 }
 
 .steps h2 {
+  margin-top: 3.16vw;
   text-align: center;
   font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
-  font-size: 40px;
-  line-height: 53px;
+  font-size: 2.76vw;
   color: #f2785c;
 }
 
 .steps_3 {
   position: relative;
   width: 100%;
-  height: 154px;
-  margin-top: 40px;
+  height: 10.7vw;
+  margin-top: 2.9vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -313,18 +306,24 @@ input::-webkit-input-placeholder {
   font-family: "Aleo";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.39vw;
   line-height: 24px;
   color: #0d606f;
+  margin: 0px;
+}
+
+.steps_3 img {
+  width: 7vw;
+  height: 7vw;
 }
 
 .destinations {
   position: relative;
-  width: 85%;
-  height: 1042px;
+  width: 100%;
+  height: 200vw;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 130px;
+  margin-top: 5vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -335,20 +334,24 @@ input::-webkit-input-placeholder {
 .destinations h2 {
   font-family: "Red Hat Text";
   font-style: normal;
-  margin-top: 35px;
+  margin-top: 3vw;
   font-weight: 500;
   margin: 0px;
-  font-size: 40px;
+  font-size: 2.76vw;
   line-height: 53px;
   color: #f2785c;
+}
+
+.slider_1_mobile {
+  display: none;
 }
 
 .slider_1 {
   position: relative;
   overflow: hidden;
-  margin-top: 46px;
-  width: 1440px;
-  height: 800px;
+  margin-top: 3%;
+  width: 100%;
+  height: 55.54vw;
   display: flex;
   align-items: center;
   align-content: center;
@@ -358,43 +361,55 @@ input::-webkit-input-placeholder {
 .slider_2 {
   position: absolute;
   top: 0px;
-  width: 2520px;
+  width: 175%;
   height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
+.slider {
+  height: 100%;
+}
 .slider p {
   position: relative;
   margin-left: 15px;
-  margin-top: -85px;
+  margin-top: -15vh;
   font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 2.2vw;
   line-height: 42px;
   color: white;
 }
 
-.swiper_slider {
+.slider img {
+  width: 55.56vw;
+  height: 55.56vw;
+}
+
+.swiper_slider_desktop {
   position: relative;
-  margin-top: 24px;
-  width: 80px;
-  height: 20px;
+  margin-top: 1.2vw;
+  width: 5.5vw;
+  /* height: 1vw; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
+.swiper_slider_desktop img {
+  width: 1.5vw;
+  height: 1.5vw;
+}
+
 .destinations button {
   position: relative;
-  width: 228px;
-  height: 59px;
-  margin-top: 40px;
+  width: 15.8vw;
+  height: 4.5vw;
+  margin-top: 3vw;
   background: #0d606f;
   border: none;
-  box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+  box-shadow: 0px 4px 4px rgb(13 96 111 / 50%);
   border-radius: 10px;
   display: flex;
   flex-direction: row;
@@ -403,18 +418,23 @@ input::-webkit-input-placeholder {
   font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.6vw;
   line-height: 32px;
   color: #ffffff;
 }
 
+.destinations button img {
+  width: 3vw;
+  height: 3vw;
+}
+
 .stories {
   position: relative;
-  width: 1200px;
+  width: 83.4%;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 80px;
+  margin-top: 1vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -422,27 +442,28 @@ input::-webkit-input-placeholder {
 
 .stories h2 {
   font-family: "Red Hat Text";
-  margin-top: 0px;
-  margin-bottom: 65px;
+  margin-top: 1.8vw;
+  margin-bottom: 0px;
   font-style: normal;
   font-weight: 500;
-  font-size: 40px;
-  line-height: 53px;
+  font-size: 2.76vw;
   text-align: center;
   color: #f2785c;
 }
 
 .stories_container {
   position: relative;
-  height: 1120px;
-  width: 1201px;
+  /* margin-top: -1.6vw; */
+  height: 75.7vw;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
 }
 
 .story {
   width: 100%;
+  height: 17.36vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -453,6 +474,12 @@ input::-webkit-input-placeholder {
 .story img {
   border-radius: 16px;
   filter: drop-shadow(0px 4px 4px #0d606f);
+  width: 27.78vw;
+  height: 17.37vw;
+}
+
+.stories_container_mobile {
+  display: none;
 }
 
 .story img:hover {
@@ -463,39 +490,40 @@ input::-webkit-input-placeholder {
 }
 
 .story article {
-  width: 761px;
+  width: 63.5%;
 }
 
 .story article h3 {
-  margin: 8px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
   font-family: "Aleo";
   font-style: normal;
   font-weight: 400;
-  font-size: 35px;
-  line-height: 40px;
+  font-size: 2.45vw;
   color: #0d606f;
 }
 
 .story article p {
   font-family: "Aleo";
-  width: 760px;
+  width: 100%;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  padding-top: 5px;
+  font-size: 1.4vw;
+  line-height: 1.66vw;
+  padding-top: 0px;
+  margin-top: 23px;
   color: #0d606f;
 }
 
 .stories button {
   position: relative;
-  width: 228px;
-  height: 59px;
-  top: 25px;
-  margin-left: 488px;
+  width: 15.8vw;
+  height: 4vw;
+  top: -3vw;
+  margin-left: auto;
+  margin-right: auto;
   background: #0d606f;
   border: none;
-  box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+  box-shadow: 0px 4px 4px rgb(13 96 111 / 50%);
   border-radius: 10px;
   display: flex;
   flex-direction: row;
@@ -504,9 +532,14 @@ input::-webkit-input-placeholder {
   font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.6vw;
   line-height: 32px;
   color: #ffffff;
+}
+
+.stories button img {
+  width: 3vw;
+  height: 3vw;
 }
 
 button:hover {
@@ -518,47 +551,714 @@ button:hover {
 }
 
 footer {
-  margin-top: 260px;
-  width: 1440px;
-  height: 34px;
+  margin-top: 7vw;
+  width: 100%;
+  height: 2.5vw;
+  position: relative;
 }
 
 .text_footer {
+  position: relative;
   font-family: "Red Hat Text";
-  margin-top: 5px;
-  margin-left: 391px;
+  /* padding-top: 1900vw; */
+  margin-bottom: auto;
+  margin-left: 25vw;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
+  font-size: 1.11vw;
   color: #ffffff;
 }
 
 .social_media {
+  margin-bottom: auto;
   float: right;
-  margin-top: -8px;
-  margin-right: 120px;
-  width: 141px;
-  height: 34px;
+  margin-right: 8.2vw;
+  width: 10vw;
+  height: 2vw;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 }
 
+.social_media img {
+  width: 2.5vw;
+  height: 2.5vw;
+}
+
 .about_author {
   float: left;
-  margin-left: 80px;
-  margin-bottom: 10px;
-  width: 120px;
-  height: 34px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 6vw;
+  width: 10vw;
+  height: 3vw;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
 }
 
+.rs_school {
+  width: 6vw;
+  height: 2vw;
+}
+
+.git {
+  width: 3vw;
+  height: 3vw;
+}
+
 .stories p strong:hover {
   transition: 3s;
   color: #f2785c;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 391px) {
+  html {
+    height: 1475px;
+  }
+
+  body {
+    max-width: 390px;
+    min-width: 320px;
+    margin: 0px;
+    width: 100%;
+    height: 1432px;
+    background: url(mobile_background_bottom.jpg) no-repeat center bottom;
+    background-size: auto;
+    overflow-x: hidden;
+  }
+
+  .wrapper {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    background: none;
+  }
+
+  header {
+    position: relative;
+    margin-top: 42.9px;
+    z-index: 10;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    width: 92%;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: none;
+  }
+
+  .logo {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 31px;
+    margin-top: 2px;
+    margin-left: 0px;
+  }
+
+  .logo img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .logo h2 {
+    display: none;
+  }
+
+  .burger_container {
+    width: 35px;
+    height: 32px;
+    margin-right: 4px;
+  }
+
+  .burger_container img {
+    display: inline;
+    width: 35px;
+    height: 32px;
+  }
+
+  #nav {
+    position: absolute;
+    float: right;
+    width: 165px;
+    height: 0px;
+    right: 40px;
+    top: 0px;
+    background-color: #f2785c;
+    -webkit-transition: linear 1s;
+    transition: linear 1s;
+    box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
+    border-radius: 10px;
+  }
+
+  #nav.open {
+    display: block;
+    height: 250px;
+    -webkit-transition: linear 1s;
+    transition: linear 1s;
+  }
+
+  #close_burger {
+    opacity: 0;
+  }
+
+  #close_burger.open {
+    opacity: 1;
+    -webkit-transition: linear 3s;
+    transition: linear 3s;
+  }
+
+  #ul_list {
+    color:transparent;
+    opacity: 0;
+    display: none;
+    margin-bottom: 30px;
+    margin-left: 44px;
+    height: 0px;
+    width: 106px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    list-style-type: none;
+    transition: all 1s ease 0s;
+  }
+
+  #ul_list.open {
+    color: white;
+    opacity: 1;
+    margin-bottom: 30px;
+    margin-left: 44px;
+    height: 176px;
+    width: 106px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    list-style-type: none;
+    transition: all 3s ease 0s;
+  }
+
+  #nav ul li {
+    font-size: 16px;
+    line-height: 21.17px;
+    font-family: "Red Hat Text", sans-serif;
+    -webkit-transition: linear 3s;
+    transition: linear 3s;
+  }
+
+  header nav ul li a:link {
+    color: white;
+    text-decoration: none;
+  }
+
+  header nav ul li a:visited {
+    color: white;
+    text-decoration: none;
+  }
+
+  header nav ul li a:hover {
+    transition: 3s;
+    color: #0d606f;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  header nav ul li a:active {
+    color: white;
+    text-decoration: none;
+  }
+
+  header button {
+    display: none;
+  }
+
+  main {
+    position: relative;
+    top: -75px;
+    width: 100%;
+    height: 98.5%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+
+  .preview {
+    position: relative;
+    width: 100%;
+    margin-right: 0px;
+    margin-top: 0px;
+    height: 251px;
+    margin-left: 0px;
+    background: url(mobile_background_top.jpg) no-repeat center top;
+    background-size: cover;
+  }
+
+  h1 {
+    display: none;
+  }
+
+  .preview p {
+    display: none;
+  }
+
+  .search {
+    position: relative;
+    margin-top: 142px;
+    margin-left: 3.8%;
+    margin-right: 3.8%;
+    width: 91.3%;
+    height: 46.5px;
+  }
+
+  input::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 16.8px;
+    padding-left: 14px;
+    padding-bottom: 20.72px;
+  }
+
+  .preview button {
+    width: 23.5%;
+    height: 30px;
+    margin-top: -40px;
+    margin-right: 6%;
+    font-size: 11px;
+    line-height: 14.55px;
+    box-shadow: none;
+  }
+
+  .steps {
+    position: relative;
+    width: 92%;
+    height: 153px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+  }
+
+  .steps img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .step_1 {
+    width: 80px;
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: inherit;
+    align-content: center;
+  }
+
+  .step_2 {
+    width: 111px;
+    height: 100px;
+    margin-left: -9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+
+  .step_3 {
+    width: 70px;
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+
+  .steps h2 {
+    margin: 0px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18.52px;
+  }
+
+  .steps_3 {
+    position: relative;
+    width: 100%;
+    height: 125px;
+    margin-top: 23px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .steps_3 p {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .destinations {
+    position: relative;
+    width: 92%;
+    height: 289px;
+    margin-top: 0px;
+  }
+
+  .destinations h2 {
+    font-size: 14px;
+    line-height: 18.52px;
+  }
+
+  .slider_1 {
+    display: none;
+  }
+
+  .slider_1_mobile {
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .slider_2_mobile {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .slider_mobile {
+    width: 100%;
+    height: 100%;
+  }
+
+  .slider_mobile p {
+    position: relative;
+    margin-left: 15px;
+    margin-top: -1.35%;
+    font-family: "Red Hat Text";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26.46px;
+    color: white;
+  }
+
+  .slider_mobile .spain {
+    width: 100%;
+    height: 100%;
+  }
+
+  .wrapper_spain {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .swiper_slider_desktop {
+    display: none;
+  }
+
+  .swiper_slider {
+    margin-left: auto;
+    margin-right: auto;
+    width: 36px;
+    height: 8px;
+  }
+
+  .arrow_container {
+    margin-top: 0px;
+    margin-bottom: 35px;
+    height: 20%;
+    width: 98.5%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .arrow_l {
+    width: 30px;
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .arrow_r {
+    width: 30px;
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .swiper_slider img {
+    width: 8px;
+    height: 8px;
+  }
+
+  .destinations button {
+    width: 25.7%;
+    height: 48px;
+    margin-top: 10px;
+    font-size: 11px;
+    line-height: 14.55px;
+  }
+
+  .destinations button img {
+    width: 10px;
+    height: 10px;
+  }
+
+  .stories {
+    position: relative;
+    margin: 0px;
+    width: 100%;
+    height: 657px;
+    background: url(mobile_bg.svg) no-repeat center top 29px;
+    background-size: cover;
+  }
+
+  .stories h2 {
+    margin-top: 0px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .stories_container {
+    display: none;
+  }
+
+  .stories_container_mobile {
+    margin-top: -5px;
+    position: relative;
+    height: 565px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .story {
+    width: 92%;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .story img {
+    width: 39.7vw;
+    height: 33.1vw;
+    border-radius: 16px;
+    filter: drop-shadow(0px 4px 4px #0d606f);
+  }
+
+  .story img:hover {
+    transition: 3s;
+    cursor: pointer;
+    border-radius: 26px;
+    filter: drop-shadow(0px 8px 8px #f2785c);
+  }
+
+  .story article {
+    width: 50vw;
+    margin-top: 0%;
+    height: 90%;
+  }
+
+  .story article h3 {
+    margin: 0px 0px 0px 0px;
+    font-size: 2.92vw;
+    line-height: 13.2px;
+  }
+
+  .story article p {
+    font-size: 2.32vw;
+    line-height: 10.8px;
+    width: 100%;
+    padding-top: 10px;
+    margin: 0px;
+  }
+
+  .stories button {
+    position: relative;
+    width: 23.5%;
+    height: 30px;
+    top: -15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 11px;
+    line-height: 14.55px;
+    justify-content: space-evenly;
+    padding: 0px;
+  }
+
+  .stories button p {
+    font-family: "Red Hat Text";
+    font-style: normal;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 11px;
+    line-height: 14.55px;
+    padding: 0px;
+  }
+
+  .stories button img {
+    width: 10px;
+    height: 10px;
+    top: -10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 11px;
+    line-height: 14.55px;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background: #f2785c;
+    color: #0d606f;
+    box-shadow: 0px 4px 4px rgba(248, 247, 247, 0.756);
+    transition: 3s;
+  }
+
+  footer {
+    margin-top: -60px;
+    width: 140px;
+    height: 34px;
+    margin-left: 33vw;
+    margin-right: auto;
+  }
+
+  .text_footer {
+    display: none;
+  }
+
+  .social_media {
+    width: 100%;
+    height: 100%;
+    margin: auto auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    float: none;
+  }
+
+  .about_author {
+    display: none;
+  }
+
+  .stories p strong:hover {
+    transition: 3s;
+    color: #f2785c;
+    cursor: pointer;
+  }
+
+  .story img {
+    width: 39.7vw;
+    height: 34.1vw;
+  }
+  .social_media img {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+@media only screen and (min-width: 590px) and (max-width: 700px) {
+  body {
+    height: 260vw;
+  }
+  .story article p {
+    margin-top: 0px;
+  }
+
+  footer {
+    margin-top: 6.5vw;
+  }
+
+  .about_author {
+    margin-top: 0.8vw;
+  }
+
+  .slider p {
+    margin-top: -10vh;
+  }
+
+  .logo_h2 {
+    margin-top: -9px;
+  }
+}
+
+@media only screen and (min-width: 391px) and (max-width: 420px) {
+  body {
+    height: 275vw;
+  }
+
+  .story article p {
+    margin-top: 0px;
+  }
+
+  footer {
+    margin-top: 6.5vw;
+  }
+
+  .about_author {
+    margin-top: 0.8vw;
+  }
+
+  .slider p {
+    margin-top: -7vh;
+  }
+
+  .logo_h2 {
+    margin-top: -9px;
+  }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 590px) {
+  body {
+    height: 265vw;
+  }
+
+  .story article p {
+    margin-top: 0px;
+  }
+
+  footer {
+    margin-top: 6.5vw;
+  }
+
+  .about_author {
+    margin-top: 0.8vw;
+  }
+
+  .slider p {
+    margin-top: -8vh;
+  }
+
+  .logo_h2 {
+    margin-top: -9px;
+  }
 }
